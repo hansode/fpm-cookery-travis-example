@@ -5,6 +5,7 @@ rvm:
 
 before_install:
   - gem --version
+  - git submodule update --init --recursive
 
 script:
   - bundle exec fpm-cook --version
