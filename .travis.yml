@@ -9,5 +9,4 @@ before_install:
 
 script:
   - bundle exec fpm-cook --version
-  - ls -la
-  - bundle exec fpm-cook fpm-cookery/recipes/fpm-cookery/recipe.rb
+  - bundle exec fpm-cook fpm-cookery/recipes/redis/recipe.rb
