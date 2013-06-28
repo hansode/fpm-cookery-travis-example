@@ -10,4 +10,6 @@ before_install:
 script:
   - bundle exec fpm-cook --version
   - which bundle
+  - env | sort
+  - sudo -E env | sort
   - sudo -E make -f .fpm-cookery.mk script
