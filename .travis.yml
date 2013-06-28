@@ -5,8 +5,8 @@ rvm:
 
 before_install:
   - gem --version
-  - git clone https://github.com/bernd/fpm-cookery.git
+  - make -f .fpm-cookery.mk before_install
 
 script:
   - bundle exec fpm-cook --version
-  - bundle exec fpm-cook fpm-cookery/recipes/redis/recipe.rb
+  - make -f .fpm-cookery.mk script
