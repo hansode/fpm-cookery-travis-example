@@ -9,4 +9,4 @@ before_install:
 
 script:
   - bundle exec fpm-cook --version
-  - make -f .fpm-cookery.mk script
+  - sudo -E make -f .fpm-cookery.mk script
