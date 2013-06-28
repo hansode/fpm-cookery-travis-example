@@ -9,3 +9,4 @@ before_install:
 
 script:
   - bundle exec fpm-cook --version
+  - ls -la
