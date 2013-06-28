@@ -11,5 +11,5 @@ script:
   - bundle exec fpm-cook --version
   - which bundle
   - env | sort
-  - sudo -E env | sort
-  - sudo -E make -f .fpm-cookery.mk script
+  - sudo PATH=$PATH -E env | sort
+  - sudo PATH=$PATH -E make -f .fpm-cookery.mk script
