@@ -1,0 +1,3 @@
+[submodule "fpm-cookery"]
+	path = fpm-cookery
+	url = https://github.com/bernd/fpm-cookery.git
