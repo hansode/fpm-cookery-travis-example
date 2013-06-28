@@ -5,7 +5,7 @@ rvm:
 
 before_install:
   - gem --version
-  - git submodule add https://github.com/bernd/fpm-cookery.git
+  - git clone https://github.com/bernd/fpm-cookery.git
 
 script:
   - bundle exec fpm-cook --version
